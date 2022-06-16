@@ -1,0 +1,83 @@
+@import '../base/_colores.scss';
+@import '../base/_extends.scss';
+@import '../base/_mixins.scss';
+
+.servicios {
+    display: grid;
+    grid-template-areas:
+        "servicios servicios"
+        "ofrecemos ofrecemos"
+        "semi capgel"
+        "texto1 texto2";
+    background-color: $rosa;
+
+    .titulo-servicios {
+        display: flex;
+        @extend %fuente;
+        color: $negro;
+        margin: 40px 30px;
+        justify-content: flex-start;
+        display: grid;
+        grid-area: servicios;
+    }
+
+    .subtitulo-servicios {
+        display: flex;
+        @extend %fuente;
+        grid-area: ofrecemos ofrecemos ofrecemos;
+        margin: 10px 30px;
+        grid-area: ofrecemos;
+        color: $negro;
+    }
+
+    .semi {
+        background-image: url("fotos/fondo-banner.svg");
+        margin: 30px;
+        padding: 20px;
+        @include bordes;
+
+        .encabezado-semi {
+            @extend %fuente;
+            margin: 15px 10px;
+            display: flex;
+            grid-area: semi;
+            color: $negro;
+        }
+
+        .texto-semi {
+            display: flex;
+            @extend %fuente;
+            margin: 15px 10px;
+            font-size: 20px;
+            line-height: 25px;
+            grid-area: texto1;
+            color: $negro;
+        }
+
+    }
+
+    .capping {
+        margin: 30px;
+        padding: 20px;
+        @include bordes;
+
+        .encabezado-capping {
+            display: flex;
+            @extend %fuente;
+            margin: 15px 10px;
+            grid-area: capgel;
+            color: negro;
+        }
+
+        .texto-capping {
+            display: flex;
+            @extend %fuente;
+            margin: 15px 10px;
+            font-size: 20px;
+            line-height: 25px;
+            grid-area: texto2;
+            color: $negro;
+        }
+    }
+
+}

@@ -1,0 +1,54 @@
+@import '../base/_colores.scss';
+@import '../base/_extends.scss';
+
+/* ----------------UBICACIÓN Y PLAYLIST--------------- */
+.playlist-ubicacion {
+    background-color: #FFDEE6;
+    display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-areas:
+        "playlist ubicacion";
+
+    #playlist {
+        display: flex;
+        flex-direction: column;
+        grid-area: playlist;
+
+        .titulo-playlist {
+            display: flex;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            padding: 10px;
+            margin: 0px 30px;
+            color: black;
+        }
+
+        .spotify {
+            padding: 20px;
+        }
+    }
+
+    /*** UBICACIÓN ***/
+    #ubicacion {
+        display: grid;
+        grid-area: ubicacion;
+        grid-template-areas:
+            "titulo"
+            "mapa";
+
+        .ubicacion-titulo {
+            display: flex;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            padding: 10px 10px 10px 0px;
+            margin: 0px 30px;
+            grid-area: titulo;
+            color: black;
+        }
+
+        .mapa {
+            padding: 20px;
+        }
+    }
+}

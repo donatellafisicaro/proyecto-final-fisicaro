@@ -1,0 +1,179 @@
+@import '../base/_colores.scss';
+@import '../base/_extends.scss';
+
+/* ----------------TRABAJOS--------------- */
+/*TRABAJOS MOBILE*/
+#trabajos {
+    background-color: $negro;
+
+    .titulo-trabajo {
+        padding: 40px 0px 0px 0px;
+        display: flex;
+        @extend %fuente;
+        margin: 0px 30px 40px 30px;
+        justify-content: flex-start;
+        color: $blanco;
+        background-color: $negro;
+    }
+
+    .trabajos-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .foto-trabajo {
+            padding: 20px;
+        }
+    }
+
+    .trabajos-desktop {
+        display: none;
+    }
+
+    .texto-trabajo {
+        display: flex;
+        text-decoration-color: $blanco;
+        color: $blanco;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        font-size: 20px;
+        line-height: 25px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        .a-trabajos {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            text-decoration: underline;
+            padding: 0px 0px 0px 5px;
+            color: $blanco;
+        }
+    }
+}
+
+/*FIN TRABAJOS MOBILE*/
+
+/*TRABAJOS DESKTOP*/
+@media screen and (min-width: 992px) {
+    #trabajos {
+        background-color: $negro;
+
+        .titulo-trabajo {
+            padding: 40px 0px 0px 0px;
+            display: flex;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+            margin: 0px 30px 40px 30px;
+            justify-content: flex-start;
+            color: $blanco;
+            background-color: $negro;
+        }
+
+
+        .trabajos-mobile {
+            display: none;
+        }
+
+
+        .trabajos-desktop {
+            display: block;
+            padding: 20px;
+
+            .trabajos-desktop-dos {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+
+                .ft-cinco {
+                    padding: 20px;
+
+                    &:hover {
+                        transform: scale(2);
+                        transition: all 2s;
+                    }
+                }
+
+                .ft-seis {
+                    padding: 20px;
+
+                    &:hover {
+                        transform: scale(2);
+                        transition: all 2s;
+                    }
+                }
+
+                .ft-siete {
+                    padding: 20px;
+
+                    &:hover {
+                        transform: scale(2);
+                        transition: all 2s;
+                    }
+                }
+            }
+
+            .trabajos-desktop-tres {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+
+                .ft-ocho {
+                    padding: 20px;
+
+                    &:hover {
+                        transform: scale(2);
+                        transition: all 2s;
+                    }
+                }
+
+                .ft-nueve {
+                    padding: 20px;
+
+                    &:hover {
+                        transform: scale(2);
+                        transition: all 2s;
+                    }
+                }
+
+                .ft-diez {
+                    padding: 20px;
+
+                    &:hover {
+                        transform: scale(2);
+                        transition: all 2s;
+                    }
+                }
+
+
+            }
+
+        }
+
+        .texto-trabajo {
+            display: flex;
+            text-decoration-color: $blanco;
+            color: $blanco;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            font-size: 20px;
+            line-height: 25px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: bold;
+
+            .a-trabajos {
+                display: flex;
+                justify-content: center;
+                text-decoration: underline;
+                padding: 0px 0px 0px 5px;
+                color: $blanco;
+            }
+        }
+    }
+}
+
+/*FIN TRABAJOS DESKTOP*/
+/* ----------------FIN TRABAJOS--------------- */

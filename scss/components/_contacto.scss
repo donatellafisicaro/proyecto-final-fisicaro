@@ -1,0 +1,32 @@
+@import '../base/_colores.scss';
+@import '../base/_extends.scss';
+
+/* ----------------CONTACTO---------------- */
+#contacto {
+    background-color: $negro;
+    padding: 0px;
+
+    .contacto-redes {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 40px;
+        background-image: url("fotos/fondo-banner.svg");
+
+        .logos {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .logo {
+                max-width: 40px;
+                max-height: 40px;
+            }
+        }
+
+
+
+    }
+}
+
+/* ----------------FIN CONTACTO---------------- */

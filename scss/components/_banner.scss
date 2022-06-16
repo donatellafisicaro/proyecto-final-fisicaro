@@ -1,0 +1,28 @@
+@import '../base/_colores.scss';
+@import '../base/_extends.scss';
+
+/* ----------------BANNER---------------- */
+.banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        background-image: url('../fotos/banner-20.svg');
+        background-position: center;
+        background-size: 1450px;
+
+        .texto-banner {
+            font-size: 60px;
+            @extend %fuente;
+            padding: 20px;
+        }
+
+        .subtexto-banner {
+            font-size: 30px;
+            @extend %fuente;
+            padding: 20px;
+        }
+    }
+
+/* ----------------FIN BANNER---------------- */
