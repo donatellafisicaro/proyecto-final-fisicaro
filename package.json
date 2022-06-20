@@ -1,11 +1,19 @@
 {
   "name": "kurama-nails",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donatellafisicaro/proyecto-final-fisicaro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/donatellafisicaro/proyecto-final-fisicaro/issues"
+  },
+  "homepage": "https://github.com/donatellafisicaro/proyecto-final-fisicaro#readme",
+  "description": ""
 }
