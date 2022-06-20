@@ -32,14 +32,13 @@
     }
 
     .texto-trabajo {
+        padding: 10px;
         display: flex;
         text-decoration-color: $blanco;
-        color: $blanco;
+        color: $rosa;
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        padding: 40px;
-        font-size: 20px;
         line-height: 25px;
         font-family: 'Raleway', sans-serif;
         font-weight: bold;
@@ -48,7 +47,6 @@
             align-items: center;
             flex-wrap: wrap;
             text-decoration: underline;
-            padding: 0px 0px 0px 5px;
             color: $blanco;
         }
     }

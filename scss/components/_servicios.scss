@@ -31,14 +31,11 @@
     }
 
     .semi {
-        background-image: url("fotos/fondo-banner.svg");
-        margin: 30px;
-        padding: 20px;
-        @include bordes;
+      
 
         .encabezado-semi {
             @extend %fuente;
-            margin: 15px 10px;
+            padding: 20px;
             display: flex;
             grid-area: semi;
             color: $negro;
@@ -47,7 +44,7 @@
         .texto-semi {
             display: flex;
             @extend %fuente;
-            margin: 15px 10px;
+            padding: 20px;
             font-size: 20px;
             line-height: 25px;
             grid-area: texto1;
@@ -57,14 +54,12 @@
     }
 
     .capping {
-        margin: 30px;
-        padding: 20px;
-        @include bordes;
+
 
         .encabezado-capping {
             display: flex;
             @extend %fuente;
-            margin: 15px 10px;
+            padding: 20px;
             grid-area: capgel;
             color: negro;
         }
@@ -72,7 +67,7 @@
         .texto-capping {
             display: flex;
             @extend %fuente;
-            margin: 15px 10px;
+            padding: 20px;
             font-size: 20px;
             line-height: 25px;
             grid-area: texto2;
