@@ -454,4 +454,8 @@ header menu li a, main .banner .texto-banner, main .banner .subtexto-banner, .se
   margin: 0px;
 }
 
+.disclaimer{
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

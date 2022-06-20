@@ -40,34 +40,7 @@ header {
         }
     }
 }
-
 /* FIN HEADER MOBILE */
 
-/* HEADER DESKTOP */
-@media screen and (min-width: 992px) {
-    .header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-direction: row;
-        padding: 10px 5%;
-        background-color: $negro;
 
-        .menu {
-            display: inline-flex;
-            flex-direction: row;
-            justify-content: flex-end;
-            padding: 7px 7px;
-
-            li {
-                display: inline-flex;
-                flex-direction: row;
-                justify-content: flex-end;
-                padding: 7px 7px;
-            }
-        }
-    }
-}
-
-/* FIN HEADER DESKTOP */
 /* ----------------FIN HEADER---------------- */

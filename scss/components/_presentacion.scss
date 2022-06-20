@@ -39,45 +39,7 @@
 
 /* FIN PRESENTACIÓN MOBILE */
 
-/*PRESENTACIÓN DESKTOP*/
-@media screen and (min-width: 992px) {
-    .presentacion {
-        display: grid;
-        grid-template-areas:
-            "text-p foto-p";
-
-        .bloque-foto-texto-p {
-            display: grid;
-            grid-template-areas:
-                "text-p foto-p";
-            background-color: $negro;
-
-
-            .foto-presentacion {
-                display: block;
-                padding: 0px 0px 0px 20px;
-                grid-area: foto-p;
-            }
 
 
 
-            .texto-presentacion {
-                display: flex;
-                justify-content: flex-start;
-                align-items: center;
-                font-family: 'Raleway', sans-serif;
-                font-weight: bold;
-                line-height: 30px;
-                padding: 0px 20px 20px 10px;
-                text-align: left;
-                font-size: 20px;
-                grid-area: text-p;
-                padding: 40px;
-                color: $blanco;
-            }
-        }
-    }
-}
-
-/*FIN PRESENTACIÓN DESKTOP*/
 /* ----------------FIN PRESENTACIÓN---------------- */
