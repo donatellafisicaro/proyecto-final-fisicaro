@@ -186,13 +186,13 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
   color: #000000;
 }
 .servicios .semi .encabezado-semi {
-  padding: 30px 0px 30px 10px;
+  padding: 30px 10px 30px 10px;
   display: flex;
   grid-area: semi;
   color: #000000;
 }
 .servicios .semi .texto-semi {
-  padding: 30px 0px 30px 10px;
+  padding: 30px 10px 30px 10px;
   display: flex;
   font-size: 20px;
   line-height: 25px;
@@ -200,13 +200,13 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
   color: #000000;
 }
 .servicios .capping .encabezado-capping {
-  padding: 30px 0px 30px 10px;
+  padding: 30px 10px 30px 10px;
   display: flex;
   grid-area: capgel;
   color: negro;
 }
 .servicios .capping .texto-capping {
-  padding: 30px 0px 30px 10px;
+  padding: 30px 10px 30px 10px;
   display: flex;
   font-size: 20px;
   line-height: 25px;

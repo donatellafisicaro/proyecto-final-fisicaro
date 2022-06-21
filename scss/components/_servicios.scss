@@ -35,7 +35,7 @@
       
 
         .encabezado-semi {
-            padding: 30px 0px 30px 10px;
+            padding: 30px 10px 30px 10px;
             @extend %fuente;
             display: flex;
             grid-area: semi;
@@ -43,7 +43,7 @@
         }
 
         .texto-semi {
-            padding: 30px 0px 30px 10px;
+            padding: 30px 10px 30px 10px;
             display: flex;
             @extend %fuente;
             font-size: 20px;
@@ -58,7 +58,7 @@
 
 
         .encabezado-capping {
-            padding: 30px 0px 30px 10px;
+            padding: 30px 10px 30px 10px;
             display: flex;
             @extend %fuente;
             grid-area: capgel;
@@ -66,7 +66,7 @@
         }
 
         .texto-capping {
-            padding: 30px 0px 30px 10px;
+            padding: 30px 10px 30px 10px;
             display: flex;
             @extend %fuente;
             font-size: 20px;
