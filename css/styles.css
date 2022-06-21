@@ -522,6 +522,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding: 0px;
 }
 #contacto .contacto-redes .logos .logo {
   max-width: 40px;
