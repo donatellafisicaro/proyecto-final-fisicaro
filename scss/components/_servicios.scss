@@ -2,17 +2,19 @@
 @import '../base/_extends.scss';
 @import '../base/_mixins.scss';
 
-.servicios {
+.servicios{
     display: grid;
     grid-template-areas:
-        "servicios servicios"
-        "ofrecemos ofrecemos"
-        "semi capgel"
-        "texto1 texto2";
+        "servicios"
+        "ofrecemos"
+        "semi"
+        "texto1"
+        "capgel"
+        "texto2";
     background-color: $rosa;
 
     .titulo-servicios {
-        padding: 40px;
+        padding: 30px 0px 30px 10px;
         display: flex;
         @extend %fuente;
         color: $negro;
@@ -22,10 +24,9 @@
     }
 
     .subtitulo-servicios {
+        padding: 30px 0px 30px 10px;
         display: flex;
-        padding: 20px;
         @extend %fuente;
-        grid-area: ofrecemos ofrecemos ofrecemos;
         grid-area: ofrecemos;
         color: $negro;
     }
@@ -34,16 +35,16 @@
       
 
         .encabezado-semi {
+            padding: 30px 0px 30px 10px;
             @extend %fuente;
             display: flex;
             grid-area: semi;
             color: $negro;
-            padding: 10px;
         }
 
         .texto-semi {
+            padding: 30px 0px 30px 10px;
             display: flex;
-            padding: 10px;
             @extend %fuente;
             font-size: 20px;
             line-height: 25px;
@@ -57,7 +58,7 @@
 
 
         .encabezado-capping {
-            padding: 10px;
+            padding: 30px 0px 30px 10px;
             display: flex;
             @extend %fuente;
             grid-area: capgel;
@@ -65,7 +66,7 @@
         }
 
         .texto-capping {
-            padding: 10px;
+            padding: 30px 0px 30px 10px;
             display: flex;
             @extend %fuente;
             font-size: 20px;
@@ -76,3 +77,79 @@
     }
 
 }
+/*DESKTOP*/
+@media screen and (min-width: 992px) {
+    .servicios {
+        display: grid;
+        grid-template-areas:
+            "servicios servicios"
+            "ofrecemos ofrecemos"
+            "semi capgel"
+            "texto1 texto2";
+        background-color: $rosa;
+    
+        .titulo-servicios {
+            padding: 40px 30px 10px 30px;
+            display: flex;
+
+            color: $negro;
+            justify-content: flex-start;
+            display: grid;
+            grid-area: servicios;
+        }
+    
+        .subtitulo-servicios {
+            padding: 20px 30px;
+            display: flex;
+
+            grid-area: ofrecemos;
+            color: $negro;
+        }
+    
+        .semi {
+          
+    
+            .encabezado-semi {
+                padding: 10px 30px;
+                display: flex;
+                grid-area: semi;
+                color: $negro;
+                font-size: 30px;
+                font-weight: bold;
+            }
+    
+            .texto-semi {
+                padding: 10px 20px 40px 30px;
+                display: flex;
+
+                font-size: 20px;
+                line-height: 25px;
+                grid-area: texto1;
+                color: $negro;
+            }
+    
+        }
+    
+        .capping {
+    
+    
+            .encabezado-capping {
+                padding: 10px 30px;
+                display: flex;
+                grid-area: capgel;
+                color: negro;
+                font-size: 30px;
+                font-weight: bold;
+            }
+    
+            .texto-capping {
+                padding: 10px 20px 40px 30px;
+                display: flex;
+                font-size: 20px;
+                line-height: 25px;
+                grid-area: texto2;
+                color: $negro;
+            }
+    
+}
+    }}

@@ -5,10 +5,11 @@
 .playlist-ubicacion {
     background-color: #FFDEE6;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     display: grid;
     grid-template-areas:
-        "playlist ubicacion";
+        "playlist"
+        "ubicacion";
 
     #playlist {
         display: flex;
@@ -20,11 +21,11 @@
             font-family: 'Raleway', sans-serif;
             font-weight: bold;
             color: black;
-            padding: 20px 0px 20px 40px;
+            padding: 20px 0px;
         }
 
         .spotify {
-            padding: 20px 5px 20px 5px;
+
         }
     }
 
@@ -46,7 +47,6 @@
         }
 
         .mapa {
-            padding: 20px 5px 20px 5px;
         }
     }
 }

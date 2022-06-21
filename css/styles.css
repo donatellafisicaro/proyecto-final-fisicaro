@@ -168,11 +168,11 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
 
 .servicios {
   display: grid;
-  grid-template-areas: "servicios servicios" "ofrecemos ofrecemos" "semi capgel" "texto1 texto2";
+  grid-template-areas: "servicios" "ofrecemos" "semi" "texto1" "capgel" "texto2";
   background-color: #FFDEE6;
 }
 .servicios .titulo-servicios {
-  padding: 40px;
+  padding: 30px 0px 30px 10px;
   display: flex;
   color: #000000;
   justify-content: flex-start;
@@ -180,34 +180,33 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
   grid-area: servicios;
 }
 .servicios .subtitulo-servicios {
+  padding: 30px 0px 30px 10px;
   display: flex;
-  padding: 20px;
-  grid-area: ofrecemos ofrecemos ofrecemos;
   grid-area: ofrecemos;
   color: #000000;
 }
 .servicios .semi .encabezado-semi {
+  padding: 30px 0px 30px 10px;
   display: flex;
   grid-area: semi;
   color: #000000;
-  padding: 10px;
 }
 .servicios .semi .texto-semi {
+  padding: 30px 0px 30px 10px;
   display: flex;
-  padding: 10px;
   font-size: 20px;
   line-height: 25px;
   grid-area: texto1;
   color: #000000;
 }
 .servicios .capping .encabezado-capping {
-  padding: 10px;
+  padding: 30px 0px 30px 10px;
   display: flex;
   grid-area: capgel;
   color: negro;
 }
 .servicios .capping .texto-capping {
-  padding: 10px;
+  padding: 30px 0px 30px 10px;
   display: flex;
   font-size: 20px;
   line-height: 25px;
@@ -215,6 +214,60 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
   color: #000000;
 }
 
+/*DESKTOP*/
+@media screen and (min-width: 992px) {
+  .servicios {
+    display: grid;
+    grid-template-areas: "servicios servicios" "ofrecemos ofrecemos" "semi capgel" "texto1 texto2";
+    background-color: #FFDEE6;
+  }
+  .servicios .titulo-servicios {
+    padding: 40px 30px 10px 30px;
+    display: flex;
+    color: #000000;
+    justify-content: flex-start;
+    display: grid;
+    grid-area: servicios;
+  }
+  .servicios .subtitulo-servicios {
+    padding: 20px 30px;
+    display: flex;
+    grid-area: ofrecemos;
+    color: #000000;
+  }
+  .servicios .semi .encabezado-semi {
+    padding: 10px 30px;
+    display: flex;
+    grid-area: semi;
+    color: #000000;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .servicios .semi .texto-semi {
+    padding: 10px 20px 40px 30px;
+    display: flex;
+    font-size: 20px;
+    line-height: 25px;
+    grid-area: texto1;
+    color: #000000;
+  }
+  .servicios .capping .encabezado-capping {
+    padding: 10px 30px;
+    display: flex;
+    grid-area: capgel;
+    color: negro;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .servicios .capping .texto-capping {
+    padding: 10px 20px 40px 30px;
+    display: flex;
+    font-size: 20px;
+    line-height: 25px;
+    grid-area: texto2;
+    color: #000000;
+  }
+}
 #trabajos .titulo-trabajo, header ul li a,
 header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .titulo-servicios, .servicios .subtitulo-servicios, .servicios .semi .encabezado-semi, .servicios .semi .texto-semi, .servicios .capping .encabezado-capping, .servicios .capping .texto-capping {
   font-family: "Raleway", sans-serif;
@@ -369,9 +422,9 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
 .playlist-ubicacion {
   background-color: #FFDEE6;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   display: grid;
-  grid-template-areas: "playlist ubicacion";
+  grid-template-areas: "playlist" "ubicacion";
   /*** UBICACIÓN ***/
 }
 .playlist-ubicacion #playlist {
@@ -384,10 +437,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   color: black;
-  padding: 20px 0px 20px 40px;
-}
-.playlist-ubicacion #playlist .spotify {
-  padding: 20px 5px 20px 5px;
+  padding: 20px 0px;
 }
 .playlist-ubicacion #ubicacion {
   display: grid;
@@ -402,10 +452,6 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   color: black;
   padding: 20px 0px;
 }
-.playlist-ubicacion #ubicacion .mapa {
-  padding: 20px 5px 20px 5px;
-}
-
 header ul li a,
 header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .titulo-servicios, .servicios .subtitulo-servicios, .servicios .semi .encabezado-semi, .servicios .semi .texto-semi, .servicios .capping .encabezado-capping, .servicios .capping .texto-capping, #trabajos .titulo-trabajo {
   font-family: "Raleway", sans-serif;
