@@ -172,43 +172,43 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
   background-color: #FFDEE6;
 }
 .servicios .titulo-servicios {
+  padding: 40px;
   display: flex;
   color: #000000;
-  margin: 40px 30px;
   justify-content: flex-start;
   display: grid;
   grid-area: servicios;
 }
 .servicios .subtitulo-servicios {
   display: flex;
+  padding: 20px;
   grid-area: ofrecemos ofrecemos ofrecemos;
-  margin: 10px 30px;
   grid-area: ofrecemos;
   color: #000000;
 }
 .servicios .semi .encabezado-semi {
-  padding: 20px;
   display: flex;
   grid-area: semi;
   color: #000000;
+  padding: 10px;
 }
 .servicios .semi .texto-semi {
   display: flex;
-  padding: 20px;
+  padding: 10px;
   font-size: 20px;
   line-height: 25px;
   grid-area: texto1;
   color: #000000;
 }
 .servicios .capping .encabezado-capping {
+  padding: 10px;
   display: flex;
-  padding: 20px;
   grid-area: capgel;
   color: negro;
 }
 .servicios .capping .texto-capping {
+  padding: 10px;
   display: flex;
-  padding: 20px;
   font-size: 20px;
   line-height: 25px;
   grid-area: texto2;
@@ -383,12 +383,11 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   display: flex;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  padding: 10px;
-  margin: 40px 30px;
   color: black;
+  padding: 20px 0px 20px 40px;
 }
 .playlist-ubicacion #playlist .spotify {
-  padding: 20px;
+  padding: 20px 5px 20px 5px;
 }
 .playlist-ubicacion #ubicacion {
   display: grid;
@@ -399,13 +398,12 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   display: flex;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  padding: 10px 10px 10px 0px;
-  margin: 40px 30px;
   grid-area: titulo;
   color: black;
+  padding: 20px 0px;
 }
 .playlist-ubicacion #ubicacion .mapa {
-  padding: 20px;
+  padding: 20px 5px 20px 5px;
 }
 
 header ul li a,

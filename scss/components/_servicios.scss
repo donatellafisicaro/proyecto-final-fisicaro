@@ -12,10 +12,10 @@
     background-color: $rosa;
 
     .titulo-servicios {
+        padding: 40px;
         display: flex;
         @extend %fuente;
         color: $negro;
-        margin: 40px 30px;
         justify-content: flex-start;
         display: grid;
         grid-area: servicios;
@@ -23,9 +23,9 @@
 
     .subtitulo-servicios {
         display: flex;
+        padding: 20px;
         @extend %fuente;
         grid-area: ofrecemos ofrecemos ofrecemos;
-        margin: 10px 30px;
         grid-area: ofrecemos;
         color: $negro;
     }
@@ -35,16 +35,16 @@
 
         .encabezado-semi {
             @extend %fuente;
-            padding: 20px;
             display: flex;
             grid-area: semi;
             color: $negro;
+            padding: 10px;
         }
 
         .texto-semi {
             display: flex;
+            padding: 10px;
             @extend %fuente;
-            padding: 20px;
             font-size: 20px;
             line-height: 25px;
             grid-area: texto1;
@@ -57,17 +57,17 @@
 
 
         .encabezado-capping {
+            padding: 10px;
             display: flex;
             @extend %fuente;
-            padding: 20px;
             grid-area: capgel;
             color: negro;
         }
 
         .texto-capping {
+            padding: 10px;
             display: flex;
             @extend %fuente;
-            padding: 20px;
             font-size: 20px;
             line-height: 25px;
             grid-area: texto2;
