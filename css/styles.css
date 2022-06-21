@@ -1,0 +1,447 @@
+@charset "UTF-8";
+#trabajos .titulo-trabajo, .servicios .capping .texto-capping, .servicios .capping .encabezado-capping, .servicios .semi .texto-semi, .servicios .semi .encabezado-semi, .servicios .subtitulo-servicios, .servicios .titulo-servicios, .banner .subtexto-banner, .banner .texto-banner, header ul li a,
+header menu li a {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+} /* ----------------HEADER---------------- */
+/* HEADER MOBILE */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 5%;
+  background-color: #000000;
+}
+header ul,
+header menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 7px;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+header ul li,
+header menu li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 7px;
+}
+header ul li a,
+header menu li a {
+  text-decoration: none;
+  list-style-type: none;
+  color: #ffffff;
+}
+
+/* FIN HEADER MOBILE */
+@media screen and (min-width: 992px) {
+  .header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px 5%;
+    background-color: #000000;
+  }
+  .header .menu {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 7px 7px;
+  }
+  .header .menu li {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 7px 7px;
+  }
+}
+/* FIN HEADER DESKTOP */
+/* ----------------FIN HEADER---------------- */
+#trabajos .titulo-trabajo, .servicios .capping .texto-capping, .servicios .capping .encabezado-capping, .servicios .semi .texto-semi, .servicios .semi .encabezado-semi, .servicios .subtitulo-servicios, .servicios .titulo-servicios, .banner .subtexto-banner, .banner .texto-banner, header ul li a,
+header menu li a {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+} /* ----------------BANNER---------------- */
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-image: url("../fotos/banner-20.svg");
+  background-position: center;
+  background-size: 1450px;
+}
+.banner .texto-banner {
+  font-size: 60px;
+  padding: 20px;
+}
+.banner .subtexto-banner {
+  font-size: 30px;
+  padding: 20px;
+}
+
+/* ----------------FIN BANNER---------------- */
+#trabajos .titulo-trabajo, .servicios .capping .texto-capping, .servicios .capping .encabezado-capping, .servicios .semi .texto-semi, .servicios .semi .encabezado-semi, .servicios .subtitulo-servicios, .servicios .titulo-servicios, header ul li a,
+header menu li a, .banner .texto-banner, .banner .subtexto-banner {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+} /* ----------------PRESENTACIÓN---------------- */
+/* PRESENTACIÓN MOBILE */
+.presentacion {
+  display: grid;
+  grid-template-areas: "text-p foto-p";
+}
+.presentacion .bloque-foto-texto-p {
+  display: grid;
+  grid-template-areas: "text-p foto-p";
+  background-color: black;
+}
+.presentacion .bloque-foto-texto-p .foto-presentacion {
+  display: none;
+}
+.presentacion .bloque-foto-texto-p .texto-presentacion {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  line-height: 30px;
+  padding: 0px 20px 20px 10px;
+  text-align: left;
+  font-size: 20px;
+  grid-area: text-p;
+  padding: 40px;
+  color: #ffffff;
+}
+
+/* FIN PRESENTACIÓN MOBILE */
+/*PRESENTACIÓN DESKTOP*/
+@media screen and (min-width: 992px) {
+  .presentacion {
+    display: grid;
+    grid-template-areas: "text-p foto-p";
+  }
+  .presentacion .bloque-foto-texto-p {
+    display: grid;
+    grid-template-areas: "text-p foto-p";
+    background-color: #000000;
+  }
+  .presentacion .bloque-foto-texto-p .foto-presentacion {
+    display: block;
+    padding: 0px 0px 0px 20px;
+    grid-area: foto-p;
+  }
+  .presentacion .bloque-foto-texto-p .texto-presentacion {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 0px 20px 20px 10px;
+    text-align: left;
+    font-size: 20px;
+    grid-area: text-p;
+    padding: 40px;
+    color: #ffffff;
+  }
+}
+/*FIN PRESENTACIÓN DESKTOP*/
+/* ----------------FIN PRESENTACIÓN---------------- */
+#trabajos .titulo-trabajo, .servicios .capping .texto-capping, .servicios .capping .encabezado-capping, .servicios .semi .texto-semi, .servicios .semi .encabezado-semi, .servicios .subtitulo-servicios, .servicios .titulo-servicios, header ul li a,
+header menu li a, .banner .texto-banner, .banner .subtexto-banner {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.servicios {
+  display: grid;
+  grid-template-areas: "servicios servicios" "ofrecemos ofrecemos" "semi capgel" "texto1 texto2";
+  background-color: #FFDEE6;
+}
+.servicios .titulo-servicios {
+  display: flex;
+  color: #000000;
+  margin: 40px 30px;
+  justify-content: flex-start;
+  display: grid;
+  grid-area: servicios;
+}
+.servicios .subtitulo-servicios {
+  display: flex;
+  grid-area: ofrecemos ofrecemos ofrecemos;
+  margin: 10px 30px;
+  grid-area: ofrecemos;
+  color: #000000;
+}
+.servicios .semi .encabezado-semi {
+  padding: 20px;
+  display: flex;
+  grid-area: semi;
+  color: #000000;
+}
+.servicios .semi .texto-semi {
+  display: flex;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 25px;
+  grid-area: texto1;
+  color: #000000;
+}
+.servicios .capping .encabezado-capping {
+  display: flex;
+  padding: 20px;
+  grid-area: capgel;
+  color: negro;
+}
+.servicios .capping .texto-capping {
+  display: flex;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 25px;
+  grid-area: texto2;
+  color: #000000;
+}
+
+#trabajos .titulo-trabajo, header ul li a,
+header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .titulo-servicios, .servicios .subtitulo-servicios, .servicios .semi .encabezado-semi, .servicios .semi .texto-semi, .servicios .capping .encabezado-capping, .servicios .capping .texto-capping {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+} /* ----------------TRABAJOS--------------- */
+/*TRABAJOS MOBILE*/
+#trabajos {
+  background-color: #000000;
+}
+#trabajos .titulo-trabajo {
+  padding: 40px 0px 0px 0px;
+  display: flex;
+  margin: 0px 30px 40px 30px;
+  justify-content: flex-start;
+  color: #FFDEE6;
+  background-color: #000000;
+}
+#trabajos .trabajos-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#trabajos .trabajos-mobile .foto-trabajo {
+  padding: 20px;
+}
+#trabajos .trabajos-desktop {
+  display: none;
+}
+#trabajos .texto-trabajo {
+  padding: 10px;
+  display: flex;
+  text-decoration-color: #ffffff;
+  color: #FFDEE6;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+#trabajos .texto-trabajo .a-trabajos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/*FIN TRABAJOS MOBILE*/
+/*TRABAJOS DESKTOP*/
+@media screen and (min-width: 992px) {
+  #trabajos {
+    background-color: #000000;
+  }
+  #trabajos .titulo-trabajo {
+    padding: 40px 0px 0px 0px;
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    margin: 0px 30px 40px 30px;
+    justify-content: flex-start;
+    color: #FFDEE6;
+    background-color: #000000;
+  }
+  #trabajos .trabajos-mobile {
+    display: none;
+  }
+  #trabajos .trabajos-desktop {
+    display: block;
+    padding: 20px;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-dos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-cinco {
+    padding: 20px;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-cinco:hover {
+    transform: scale(2);
+    transition: all 2s;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-seis {
+    padding: 20px;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-seis:hover {
+    transform: scale(2);
+    transition: all 2s;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-siete {
+    padding: 20px;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-siete:hover {
+    transform: scale(2);
+    transition: all 2s;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-tres {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-ocho {
+    padding: 20px;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-ocho:hover {
+    transform: scale(2);
+    transition: all 2s;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-nueve {
+    padding: 20px;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-nueve:hover {
+    transform: scale(2);
+    transition: all 2s;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-diez {
+    padding: 20px;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-diez:hover {
+    transform: scale(2);
+    transition: all 2s;
+  }
+  #trabajos .texto-trabajo {
+    display: flex;
+    text-decoration-color: #ffffff;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+  }
+  #trabajos .texto-trabajo .a-trabajos {
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+    padding: 0px 0px 0px 5px;
+    color: #ffffff;
+  }
+}
+/*FIN TRABAJOS DESKTOP*/
+/* ----------------FIN TRABAJOS--------------- */
+header ul li a,
+header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .titulo-servicios, .servicios .subtitulo-servicios, .servicios .semi .encabezado-semi, .servicios .semi .texto-semi, .servicios .capping .encabezado-capping, .servicios .capping .texto-capping, #trabajos .titulo-trabajo {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+} /* ----------------UBICACIÓN Y PLAYLIST--------------- */
+.playlist-ubicacion {
+  background-color: #FFDEE6;
+  display: flex;
+  flex-direction: row;
+  display: grid;
+  grid-template-areas: "playlist ubicacion";
+  /*** UBICACIÓN ***/
+}
+.playlist-ubicacion #playlist {
+  display: flex;
+  flex-direction: column;
+  grid-area: playlist;
+}
+.playlist-ubicacion #playlist .titulo-playlist {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  margin: 40px 30px;
+  color: black;
+}
+.playlist-ubicacion #playlist .spotify {
+  padding: 20px;
+}
+.playlist-ubicacion #ubicacion {
+  display: grid;
+  grid-area: ubicacion;
+  grid-template-areas: "titulo" "mapa";
+}
+.playlist-ubicacion #ubicacion .ubicacion-titulo {
+  display: flex;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  padding: 10px 10px 10px 0px;
+  margin: 40px 30px;
+  grid-area: titulo;
+  color: black;
+}
+.playlist-ubicacion #ubicacion .mapa {
+  padding: 20px;
+}
+
+header ul li a,
+header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .titulo-servicios, .servicios .subtitulo-servicios, .servicios .semi .encabezado-semi, .servicios .semi .texto-semi, .servicios .capping .encabezado-capping, .servicios .capping .texto-capping, #trabajos .titulo-trabajo {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+} /* ----------------CONTACTO---------------- */
+#contacto {
+  background-color: #000000;
+  padding: 0px;
+}
+#contacto .contacto-redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background-image: url("fotos/fondo-banner.svg");
+}
+#contacto .contacto-redes .logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#contacto .contacto-redes .logos .logo {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+/* ----------------FIN CONTACTO---------------- */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.disclaimer {
+  display: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
