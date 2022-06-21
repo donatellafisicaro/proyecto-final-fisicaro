@@ -297,24 +297,32 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
 #trabajos .trabajos-desktop {
   display: none;
 }
-#trabajos .texto-trabajo {
-  padding: 10px;
+#trabajos .bloque-texto-trabajo {
   display: flex;
-  text-decoration-color: #ffffff;
-  color: #FFDEE6;
-  align-items: center;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
+}
+#trabajos .bloque-texto-trabajo .texto-trabajo {
+  padding: 10px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  color: #FFDEE6;
   line-height: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
-#trabajos .texto-trabajo .a-trabajos {
+#trabajos .bloque-texto-trabajo .a-trabajos {
+  padding: 2.5px 10px 20px 10px;
+  line-height: 25px;
+  font-size: 20px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   text-decoration: underline;
-  color: #ffffff;
+  color: #FFDEE6;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
 }
 
 /*FIN TRABAJOS MOBILE*/
@@ -392,24 +400,31 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     transform: scale(2);
     transition: all 2s;
   }
-  #trabajos .texto-trabajo {
+  #trabajos .bloque-texto-trabajo {
     display: flex;
-    text-decoration-color: #ffffff;
-    color: #ffffff;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 40px;
-    font-size: 20px;
+  }
+  #trabajos .bloque-texto-trabajo .texto-trabajo {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    color: #FFDEE6;
     line-height: 25px;
     font-family: "Raleway", sans-serif;
     font-weight: bold;
   }
-  #trabajos .texto-trabajo .a-trabajos {
+  #trabajos .bloque-texto-trabajo .a-trabajos {
+    padding: 2.5px 10px 20px 10px;
+    line-height: 25px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     text-decoration: underline;
-    padding: 0px 0px 0px 5px;
-    color: #ffffff;
+    color: #FFDEE6;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
   }
 }
 /*FIN TRABAJOS DESKTOP*/
