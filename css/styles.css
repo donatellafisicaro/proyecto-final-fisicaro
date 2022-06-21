@@ -418,7 +418,8 @@ header ul li a,
 header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .titulo-servicios, .servicios .subtitulo-servicios, .servicios .semi .encabezado-semi, .servicios .semi .texto-semi, .servicios .capping .encabezado-capping, .servicios .capping .texto-capping, #trabajos .titulo-trabajo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-} /* ----------------UBICACIÓN Y PLAYLIST--------------- */
+}
+
 .playlist-ubicacion {
   background-color: #FFDEE6;
   display: flex;
@@ -437,7 +438,10 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   color: black;
-  padding: 20px 0px;
+  padding: 40px 30px;
+}
+.playlist-ubicacion #playlist .spotify {
+  padding: 10px;
 }
 .playlist-ubicacion #ubicacion {
   display: grid;
@@ -450,7 +454,53 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   font-weight: bold;
   grid-area: titulo;
   color: black;
-  padding: 20px 0px;
+  padding: 40px 30px;
+}
+.playlist-ubicacion #ubicacion .mapa {
+  padding: 10px;
+}
+
+/* ----------------UBICACIÓN Y PLAYLIST DESKTOP --------------- */
+@media screen and (min-width: 992px) {
+  .playlist-ubicacion {
+    background-color: #FFDEE6;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    grid-template-areas: "playlist ubicacion";
+    /*** UBICACIÓN ***/
+  }
+  .playlist-ubicacion #playlist {
+    display: flex;
+    flex-direction: column;
+    grid-area: playlist;
+  }
+  .playlist-ubicacion #playlist .titulo-playlist {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    color: black;
+    padding: 40px 30px;
+  }
+  .playlist-ubicacion #playlist .spotify {
+    padding: 10px;
+  }
+  .playlist-ubicacion #ubicacion {
+    display: grid;
+    grid-area: ubicacion;
+    grid-template-areas: "titulo" "mapa";
+  }
+  .playlist-ubicacion #ubicacion .ubicacion-titulo {
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    grid-area: titulo;
+    color: black;
+    padding: 40px 30px;
+  }
+  .playlist-ubicacion #ubicacion .mapa {
+    padding: 10px;
+  }
 }
 header ul li a,
 header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .titulo-servicios, .servicios .subtitulo-servicios, .servicios .semi .encabezado-semi, .servicios .semi .texto-semi, .servicios .capping .encabezado-capping, .servicios .capping .texto-capping, #trabajos .titulo-trabajo {

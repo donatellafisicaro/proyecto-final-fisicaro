@@ -1,7 +1,6 @@
 @import '../base/_colores.scss';
 @import '../base/_extends.scss';
 
-/* ----------------UBICACIÓN Y PLAYLIST--------------- */
 .playlist-ubicacion {
     background-color: #FFDEE6;
     display: flex;
@@ -21,11 +20,11 @@
             font-family: 'Raleway', sans-serif;
             font-weight: bold;
             color: black;
-            padding: 20px 0px;
+            padding: 40px 30px;
         }
 
         .spotify {
-
+            padding: 10px;
         }
     }
 
@@ -43,10 +42,64 @@
             font-weight: bold;
             grid-area: titulo;
             color: black;
-            padding: 20px 0px;
+            padding: 40px 30px;
         }
 
         .mapa {
+            padding: 10px;
+        }
+    }
+}
+
+
+/* ----------------UBICACIÓN Y PLAYLIST DESKTOP --------------- */
+@media screen and (min-width: 992px) {
+    .playlist-ubicacion {
+        background-color: #FFDEE6;
+        display: flex;
+        flex-direction: column;
+        display: grid;
+        grid-template-areas:
+            "playlist ubicacion";
+
+        #playlist {
+            display: flex;
+            flex-direction: column;
+            grid-area: playlist;
+
+            .titulo-playlist {
+                display: flex;
+                font-family: 'Raleway', sans-serif;
+                font-weight: bold;
+                color: black;
+                padding: 40px 30px;
+            }
+
+            .spotify {
+                padding: 10px;
+            }
+        }
+
+        /*** UBICACIÓN ***/
+        #ubicacion {
+            display: grid;
+            grid-area: ubicacion;
+            grid-template-areas:
+                "titulo"
+                "mapa";
+
+            .ubicacion-titulo {
+                display: flex;
+                font-family: 'Raleway', sans-serif;
+                font-weight: bold;
+                grid-area: titulo;
+                color: black;
+                padding: 40px 30px;
+            }
+
+            .mapa {
+                padding: 10px;
+            }
         }
     }
 }
