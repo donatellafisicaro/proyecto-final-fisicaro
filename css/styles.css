@@ -84,12 +84,15 @@ header menu li a {
   background-size: 1450px;
 }
 .banner .texto-banner {
+  border: 3px solid #000000;
   font-size: 60px;
   padding: 20px;
+  color: #000000;
 }
 .banner .subtexto-banner {
   font-size: 30px;
   padding: 20px;
+  font-weight: bold;
 }
 
 /* ----------------FIN BANNER---------------- */
@@ -232,6 +235,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
   .servicios .subtitulo-servicios {
     padding: 20px 30px;
     display: flex;
+    font-size: 20px;
     grid-area: ofrecemos;
     color: #000000;
   }
@@ -397,6 +401,58 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     padding: 20px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-diez:hover {
+    transform: scale(2);
+    transition: all 2s;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cuatro {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-once {
+    padding: 20px;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-once:hover {
+    transform: scale(2);
+    transition: all 2s;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-doce {
+    padding: 20px;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-doce:hover {
+    transform: scale(2);
+    transition: all 2s;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-trece {
+    padding: 20px;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-trece:hover {
+    transform: scale(2);
+    transition: all 2s;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cinco {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-catorce {
+    padding: 20px;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-catorce:hover {
+    transform: scale(2);
+    transition: all 2s;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-quince {
+    padding: 20px;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-quince:hover {
+    transform: scale(2);
+    transition: all 2s;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-dieciseis {
+    padding: 20px;
+  }
+  #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-dieciseis:hover {
     transform: scale(2);
     transition: all 2s;
   }

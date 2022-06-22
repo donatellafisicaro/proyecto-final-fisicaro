@@ -91,7 +91,6 @@
         .titulo-servicios {
             padding: 40px 30px 10px 30px;
             display: flex;
-
             color: $negro;
             justify-content: flex-start;
             display: grid;
@@ -101,7 +100,7 @@
         .subtitulo-servicios {
             padding: 20px 30px;
             display: flex;
-
+            font-size: 20px;
             grid-area: ofrecemos;
             color: $negro;
         }

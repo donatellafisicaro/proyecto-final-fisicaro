@@ -39,7 +39,7 @@
 
         .texto-trabajo {
             padding: 10px;
-            font-size: 20px ;
+            font-size: 20px;
             display: flex;
             align-items: center;
             color: $rosa;
@@ -51,7 +51,7 @@
         .a-trabajos {
             padding: 2.5px 10px 20px 10px;
             line-height: 25px;
-            font-size: 20px ;
+            font-size: 20px;
             display: flex;
             align-items: center;
             flex-wrap: wrap;
@@ -159,6 +159,79 @@
 
             }
 
+
+
+            .trabajos-desktop-cuatro {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
+
+                .ft-once {
+                    padding: 20px;
+
+                    &:hover {
+                        transform: scale(2);
+                        transition: all 2s;
+                    }
+                }
+
+                .ft-doce {
+                    padding: 20px;
+
+                    &:hover {
+                        transform: scale(2);
+                        transition: all 2s;
+                    }
+                }
+
+                .ft-trece {
+                    padding: 20px;
+
+                    &:hover {
+                        transform: scale(2);
+                        transition: all 2s;
+                    }
+                }
+            }
+
+
+                .trabajos-desktop-cinco {
+                    display: flex;
+                    justify-content: space-around;
+                    flex-direction: row;
+
+                    .ft-catorce {
+                        padding: 20px;
+
+                        &:hover {
+                            transform: scale(2);
+                            transition: all 2s;
+                        }
+                    }
+
+                    .ft-quince {
+                        padding: 20px;
+
+                        &:hover {
+                            transform: scale(2);
+                            transition: all 2s;
+                        }
+                    }
+
+                    .ft-dieciseis {
+                        padding: 20px;
+
+                        &:hover {
+                            transform: scale(2);
+                            transition: all 2s;
+                        }
+                    }
+
+
+                }
+
+            
+            
         }
 
         .bloque-texto-trabajo {
@@ -187,7 +260,7 @@
                 color: $rosa;
                 font-family: 'Raleway', sans-serif;
                 font-weight: bold;
-                font-size: 20px ;
+                font-size: 20px;
             }
         }
     }
