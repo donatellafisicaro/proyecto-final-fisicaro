@@ -296,7 +296,8 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   justify-content: center;
 }
 #trabajos .trabajos-mobile .foto-trabajo {
-  padding: 20px;
+  border: 1px solid #FFDEE6;
+  margin: 20px 0px;
 }
 #trabajos .trabajos-desktop {
   display: none;
@@ -358,21 +359,24 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     flex-direction: row;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-cinco {
-    padding: 20px;
+    border: 1px solid #FFDEE6;
+    margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-cinco:hover {
     transform: scale(2);
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-seis {
-    padding: 20px;
+    border: 1px solid #FFDEE6;
+    margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-seis:hover {
     transform: scale(2);
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-siete {
-    padding: 20px;
+    border: 1px solid #FFDEE6;
+    margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-siete:hover {
     transform: scale(2);
@@ -384,21 +388,24 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     flex-direction: row;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-ocho {
-    padding: 20px;
+    border: 1px solid #FFDEE6;
+    margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-ocho:hover {
     transform: scale(2);
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-nueve {
-    padding: 20px;
+    border: 1px solid #FFDEE6;
+    margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-nueve:hover {
     transform: scale(2);
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-diez {
-    padding: 20px;
+    border: 1px solid #FFDEE6;
+    margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-diez:hover {
     transform: scale(2);
@@ -410,21 +417,24 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     flex-direction: row;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-once {
-    padding: 20px;
+    border: 1px solid #FFDEE6;
+    margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-once:hover {
     transform: scale(2);
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-doce {
-    padding: 20px;
+    border: 1px solid #FFDEE6;
+    margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-doce:hover {
     transform: scale(2);
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-trece {
-    padding: 20px;
+    border: 1px solid #FFDEE6;
+    margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-trece:hover {
     transform: scale(2);
@@ -436,21 +446,24 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     flex-direction: row;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-catorce {
-    padding: 20px;
+    border: 1px solid #FFDEE6;
+    margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-catorce:hover {
     transform: scale(2);
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-quince {
-    padding: 20px;
+    border: 1px solid #FFDEE6;
+    margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-quince:hover {
     transform: scale(2);
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-dieciseis {
-    padding: 20px;
+    border: 1px solid #FFDEE6;
+    margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-dieciseis:hover {
     transform: scale(2);
