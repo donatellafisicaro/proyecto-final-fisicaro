@@ -627,6 +627,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   align-items: center;
   background-color: #f4f4f4;
   padding: 30px 20px;
+  justify-content: space-around;
 }
 .banner-2 .texto-banner-2 {
   border: 2px solid #000000;
@@ -634,14 +635,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   padding: 20px;
   color: #000000;
   display: flex;
-  justify-content: center;
   text-align: center;
-}
-.banner-2 .opi {
-  padding: 10px;
-}
-.banner-2 .meline {
-  padding: 10px;
 }
 
 /* ----------------FIN BANNER 2  MOBILE ---------------- */
@@ -661,7 +655,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     color: #000000;
   }
   .banner-2 .opi {
-    padding: 10px;
+    padding: 20px;
     animation-name: mov;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -669,7 +663,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     animation-direction: alternate;
   }
   .banner-2 .meline {
-    padding: 10px;
+    padding: 20px;
     animation-name: mov;
     animation-duration: 2s;
     animation-iteration-count: infinite;
