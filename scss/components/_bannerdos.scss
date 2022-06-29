@@ -1,0 +1,63 @@
+@import '../base/_colores.scss';
+@import '../base/_extends.scss';
+
+
+/* ----------------BANNER 2 MOBILE---------------- */
+.banner-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $gris;
+    padding: 30px 20px;
+
+    .texto-banner-2 {
+        border: 2px solid $negro;
+        font-size: 30px;
+        @extend %fuente;
+        padding: 20px;
+        color: $negro;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .opi{
+        padding: 10px;
+    }
+    .meline{
+        padding: 10px;
+    }
+
+}
+/* ----------------FIN BANNER 2  MOBILE ---------------- */
+
+
+/* ----------------BANNER 2 DESKTOP---------------- */
+@media screen and (min-width: 992px) {
+.banner-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $gris;
+
+    .texto-banner-2 {
+        border: 2px solid $negro;
+        font-size: 30px;
+        @extend %fuente;
+        padding: 20px;
+        color: $negro;
+    }
+
+    .opi{
+        padding: 10px;
+    }
+    .meline{
+        padding: 10px;
+    }
+
+}
+}
+
+/* ----------------FIN BANNER 2 DESKTOP---------------- */
+
