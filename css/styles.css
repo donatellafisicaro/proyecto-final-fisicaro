@@ -649,9 +649,29 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   }
   .banner-2 .opi {
     padding: 10px;
+    animation-name: mov;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
   }
   .banner-2 .meline {
     padding: 10px;
+    animation-name: mov;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-direction: alternate;
+  }
+  @keyframes mov {
+    from {
+      margin-top: 2.5%;
+      width: 10%;
+    }
+    to {
+      margin-bottom: 2.5%;
+      width: 10%;
+    }
   }
 }
 /* ----------------FIN BANNER 2 DESKTOP---------------- */
