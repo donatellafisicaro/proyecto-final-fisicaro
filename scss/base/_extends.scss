@@ -2,3 +2,9 @@
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
+
+%centrado-columnas{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

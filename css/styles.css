@@ -3,45 +3,43 @@
 header menu li a {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-} /* ----------------HEADER---------------- */
-/* HEADER MOBILE */
-header {
-  display: flex;
+}
+
+.banner, header ul li,
+header menu li, header ul,
+header menu, header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+/* ---------------- HEADER---------------- */
+/* HEADER MOBILE */
+header {
+  display: flex;
   padding: 10px 5%;
   background-color: #000000;
 }
 header ul,
 header menu {
   list-style: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 7px 7px;
   text-decoration: none;
-  list-style-type: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
+  display: flex;
+  padding: 7px 7px;
 }
 header ul li,
 header menu li {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 7px 7px;
 }
 header ul li a,
 header menu li a {
   text-decoration: none;
-  list-style-type: none;
   color: #ffffff;
 }
 
 /* FIN HEADER MOBILE */
+/* HEADER DESKTOP */
 @media screen and (min-width: 992px) {
   .header {
     position: sticky;
@@ -54,15 +52,11 @@ header menu li a {
     background-color: #000000;
   }
   .header .menu {
-    display: inline-flex;
     flex-direction: row;
     justify-content: flex-end;
     padding: 7px 7px;
   }
   .header .menu li {
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: flex-end;
     padding: 7px 7px;
   }
 }
@@ -72,12 +66,19 @@ header menu li a {
 header menu li a {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-} /* ----------------BANNER---------------- */
-.banner {
-  display: flex;
-  flex-direction: column;
+}
+
+.banner, header, header ul,
+header menu, header ul li,
+header menu li {
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+/* ----------------BANNER---------------- */
+.banner {
+  display: flex;
   padding: 50px;
   background-image: url("../fotos/banner-20.svg");
   background-position: center;
@@ -85,6 +86,7 @@ header menu li a {
 }
 .banner .texto-banner {
   border: 3px solid #000000;
+  text-align: left;
   font-size: 60px;
   padding: 20px;
   color: #000000;
@@ -100,7 +102,16 @@ header menu li a {
 header menu li a, .banner .texto-banner, .banner .subtexto-banner {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-} /* ----------------PRESENTACIÓN---------------- */
+}
+
+header, header ul,
+header menu, header ul li,
+header menu li, .banner {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* PRESENTACIÓN MOBILE */
 .presentacion {
   display: grid;
@@ -109,7 +120,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
 .presentacion .bloque-foto-texto-p {
   display: grid;
   grid-template-areas: "text-p foto-p";
-  background-color: black;
+  background-color: #000000;
 }
 .presentacion .bloque-foto-texto-p .foto-presentacion {
   display: none;
@@ -130,7 +141,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
 }
 
 /* FIN PRESENTACIÓN MOBILE */
-/*PRESENTACIÓN DESKTOP*/
+/* PRESENTACIÓN DESKTOP */
 @media screen and (min-width: 992px) {
   .presentacion {
     display: grid;
@@ -156,19 +167,27 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
     padding: 0px 20px 20px 10px;
     text-align: left;
     font-size: 20px;
-    grid-area: text-p;
     padding: 40px;
     color: #ffffff;
+    grid-area: text-p;
   }
 }
 /*FIN PRESENTACIÓN DESKTOP*/
-/* ----------------FIN PRESENTACIÓN---------------- */
 .banner-2 .texto-banner-2, #trabajos .titulo-trabajo, .servicios .capping .texto-capping, .servicios .capping .encabezado-capping, .servicios .semi .texto-semi, .servicios .semi .encabezado-semi, .servicios .subtitulo-servicios, .servicios .titulo-servicios, header ul li a,
 header menu li a, .banner .texto-banner, .banner .subtexto-banner {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
 
+header, header ul,
+header menu, header ul li,
+header menu li, .banner {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* SERVICIOS MOBILE */
 .servicios {
   display: grid;
   grid-template-areas: "servicios" "ofrecemos" "semi" "texto1" "capgel" "texto2";
@@ -187,9 +206,11 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
   display: flex;
   grid-area: ofrecemos;
   color: #000000;
+  font-size: 20px;
 }
 .servicios .semi .encabezado-semi {
   padding: 30px 10px 30px 10px;
+  font-size: 20px;
   display: flex;
   grid-area: semi;
   color: #000000;
@@ -205,6 +226,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
 .servicios .capping .encabezado-capping {
   padding: 30px 10px 30px 10px;
   display: flex;
+  font-size: 20px;
   grid-area: capgel;
   color: negro;
 }
@@ -217,7 +239,8 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
   color: #000000;
 }
 
-/*DESKTOP*/
+/* FIN SERVICIOS MOBILE */
+/* SERVICIOS DESKTOP */
 @media screen and (min-width: 992px) {
   .servicios {
     display: grid;
@@ -272,11 +295,22 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner {
     color: #000000;
   }
 }
+/* FIN SERVICIOS DESKTOP */
 .banner-2 .texto-banner-2, #trabajos .titulo-trabajo, header ul li a,
 header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .titulo-servicios, .servicios .subtitulo-servicios, .servicios .semi .encabezado-semi, .servicios .semi .texto-semi, .servicios .capping .encabezado-capping, .servicios .capping .texto-capping {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-} /* ----------------TRABAJOS--------------- */
+}
+
+header, header ul,
+header menu, header ul li,
+header menu li, .banner {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ----------------TRABAJOS--------------- */
 /*TRABAJOS MOBILE*/
 #trabajos {
   background-color: #000000;
@@ -312,6 +346,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   font-size: 20px;
   display: flex;
   align-items: center;
+  text-align: center;
   color: #FFDEE6;
   line-height: 25px;
   font-family: "Raleway", sans-serif;
@@ -330,8 +365,8 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   font-weight: bold;
 }
 
-/*FIN TRABAJOS MOBILE*/
-/*TRABAJOS DESKTOP*/
+/* FIN TRABAJOS MOBILE */
+/* TRABAJOS DESKTOP */
 @media screen and (min-width: 992px) {
   #trabajos {
     background-color: #000000;
@@ -359,7 +394,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     flex-direction: row;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-cinco {
-    border: 1px solid #FFDEE6;
+    border: 1px solid #000000;
     margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-cinco:hover {
@@ -367,7 +402,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-seis {
-    border: 1px solid #FFDEE6;
+    border: 1px solid #000000;
     margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-seis:hover {
@@ -375,7 +410,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-siete {
-    border: 1px solid #FFDEE6;
+    border: 1px solid #000000;
     margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-dos .ft-siete:hover {
@@ -388,7 +423,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     flex-direction: row;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-ocho {
-    border: 1px solid #FFDEE6;
+    border: 1px solid #000000;
     margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-ocho:hover {
@@ -396,7 +431,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-nueve {
-    border: 1px solid #FFDEE6;
+    border: 1px solid #000000;
     margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-nueve:hover {
@@ -404,7 +439,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-diez {
-    border: 1px solid #FFDEE6;
+    border: 1px solid #000000;
     margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-tres .ft-diez:hover {
@@ -417,7 +452,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     flex-direction: row;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-once {
-    border: 1px solid #FFDEE6;
+    border: 1px solid #000000;
     margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-once:hover {
@@ -425,7 +460,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-doce {
-    border: 1px solid #FFDEE6;
+    border: 1px solid #000000;
     margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-doce:hover {
@@ -433,7 +468,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-trece {
-    border: 1px solid #FFDEE6;
+    border: 1px solid #000000;
     margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cuatro .ft-trece:hover {
@@ -446,7 +481,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     flex-direction: row;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-catorce {
-    border: 1px solid #FFDEE6;
+    border: 1px solid #000000;
     margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-catorce:hover {
@@ -454,7 +489,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-quince {
-    border: 1px solid #FFDEE6;
+    border: 1px solid #000000;
     margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-quince:hover {
@@ -462,7 +497,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     transition: all 2s;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-dieciseis {
-    border: 1px solid #FFDEE6;
+    border: 1px solid #000000;
     margin: 20px 0px;
   }
   #trabajos .trabajos-desktop .trabajos-desktop-cinco .ft-dieciseis:hover {
@@ -478,6 +513,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     padding: 10px;
     display: flex;
     align-items: center;
+    text-align: center;
     color: #FFDEE6;
     line-height: 25px;
     font-family: "Raleway", sans-serif;
@@ -496,20 +532,29 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     font-size: 20px;
   }
 }
-/*FIN TRABAJOS DESKTOP*/
-/* ----------------FIN TRABAJOS--------------- */
+/* FIN TRABAJOS DESKTOP */
 .banner-2 .texto-banner-2, header ul li a,
 header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .titulo-servicios, .servicios .subtitulo-servicios, .servicios .semi .encabezado-semi, .servicios .semi .texto-semi, .servicios .capping .encabezado-capping, .servicios .capping .texto-capping, #trabajos .titulo-trabajo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
 
+header, header ul,
+header menu, header ul li,
+header menu li, .banner {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ----------------UBICACIÓN Y PLAYLIST MOBILE --------------- */
 .playlist-ubicacion {
   background-color: #FFDEE6;
   display: flex;
   flex-direction: column;
   display: grid;
   grid-template-areas: "playlist" "ubicacion";
+  /*** PLAYLIST ***/
   /*** UBICACIÓN ***/
 }
 .playlist-ubicacion #playlist {
@@ -544,6 +589,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
   padding: 10px;
 }
 
+/* ----------------UBICACIÓN Y PLAYLIST MOBILE --------------- */
 /* ----------------UBICACIÓN Y PLAYLIST DESKTOP --------------- */
 @media screen and (min-width: 992px) {
   .playlist-ubicacion {
@@ -552,6 +598,7 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     flex-direction: column;
     display: grid;
     grid-template-areas: "playlist ubicacion";
+    /*** PLAYLIST ***/
     /*** UBICACIÓN ***/
   }
   .playlist-ubicacion #playlist {
@@ -586,11 +633,22 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
     padding: 10px;
   }
 }
+/* ----------------FIN UBICACIÓN Y PLAYLIST DESKTOP --------------- */
 .banner-2 .texto-banner-2, header ul li a,
 header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .titulo-servicios, .servicios .subtitulo-servicios, .servicios .semi .encabezado-semi, .servicios .semi .texto-semi, .servicios .capping .encabezado-capping, .servicios .capping .texto-capping, #trabajos .titulo-trabajo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-} /* ----------------CONTACTO---------------- */
+}
+
+header, header ul,
+header menu, header ul li,
+header menu li, .banner {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ----------------CONTACTO---------------- */
 #contacto {
   background-color: #000000;
   padding: 0px;
@@ -618,6 +676,14 @@ header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .t
 header menu li a, .banner .texto-banner, .banner .subtexto-banner, .servicios .titulo-servicios, .servicios .subtitulo-servicios, .servicios .semi .encabezado-semi, .servicios .semi .texto-semi, .servicios .capping .encabezado-capping, .servicios .capping .texto-capping, #trabajos .titulo-trabajo {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+}
+
+header, header ul,
+header menu, header ul li,
+header menu li, .banner {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* ----------------BANNER 2 MOBILE---------------- */

@@ -1,52 +1,42 @@
 @import '../base/_colores.scss';
 @import '../base/_extends.scss';
 
-/* ----------------HEADER---------------- */
+/* ---------------- HEADER---------------- */
 /* HEADER MOBILE */
 header {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @extend %centrado-columnas;
     padding: 10px 5%;
     background-color: $negro;
 
     ul,
     menu {
         list-style: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 7px 7px;
         text-decoration: none;
-        list-style-type: none;
-        font-family: 'Raleway', sans-serif;
-        font-weight: bold;
+        display: flex;
+        @extend %centrado-columnas;
+        padding: 7px 7px;
 
         li {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            @extend %centrado-columnas;
             padding: 7px 7px;
 
             a {
                 text-decoration: none;
-                list-style-type: none;
                 color: $blanco;
                 @extend %fuente;
             }
         }
     }
 }
-
 /* FIN HEADER MOBILE */
+
+/* HEADER DESKTOP */
 @media screen and (min-width: 992px) {
     .header {
         position: sticky;
         top: 0;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -55,23 +45,15 @@ header {
         background-color: $negro;
 
         .menu {
-            display: inline-flex;
             flex-direction: row;
             justify-content: flex-end;
             padding: 7px 7px;
 
             li {
-                display: inline-flex;
-                flex-direction: row;
-                justify-content: flex-end;
                 padding: 7px 7px;
             }
         }
     }
 }
-
 /* FIN HEADER DESKTOP */
-
-
-
 /* ----------------FIN HEADER---------------- */

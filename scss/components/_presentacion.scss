@@ -1,7 +1,6 @@
 @import '../base/_colores.scss';
 @import '../base/_extends.scss';
 
-/* ----------------PRESENTACIÓN---------------- */
 /* PRESENTACIÓN MOBILE */
 .presentacion {
     display: grid;
@@ -12,7 +11,7 @@
         display: grid;
         grid-template-areas:
             "text-p foto-p";
-        background-color: black;
+        background-color: $negro;
 
 
         .foto-presentacion {
@@ -37,7 +36,8 @@
     }
 }
 /* FIN PRESENTACIÓN MOBILE */
-/*PRESENTACIÓN DESKTOP*/
+
+/* PRESENTACIÓN DESKTOP */
 @media screen and (min-width: 992px) {
     .presentacion {
         display: grid;
@@ -69,9 +69,9 @@
                 padding: 0px 20px 20px 10px;
                 text-align: left;
                 font-size: 20px;
-                grid-area: text-p;
                 padding: 40px;
                 color: $blanco;
+                grid-area: text-p;
             }
         }
     }
@@ -80,4 +80,3 @@
 
 
 
-/* ----------------FIN PRESENTACIÓN---------------- */

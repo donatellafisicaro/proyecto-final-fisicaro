@@ -43,6 +43,7 @@
             font-size: 20px;
             display: flex;
             align-items: center;
+            text-align: center;
             color: $rosa;
             line-height: 25px;
             font-family: 'Raleway', sans-serif;
@@ -64,9 +65,9 @@
 
     }
 }
+/* FIN TRABAJOS MOBILE */
 
-/*FIN TRABAJOS MOBILE*/
-/*TRABAJOS DESKTOP*/
+/* TRABAJOS DESKTOP */
 @media screen and (min-width: 992px) {
     #trabajos {
         background-color: $negro;
@@ -98,7 +99,7 @@
                 flex-direction: row;
 
                 .ft-cinco {
-                    border: 1px solid $rosa;
+                    border: 1px solid $negro;
                     margin: 20px 0px;
 
                     &:hover {
@@ -108,7 +109,7 @@
                 }
 
                 .ft-seis {
-                    border: 1px solid $rosa;
+                    border: 1px solid $negro;
                     margin: 20px 0px;
 
                     &:hover {
@@ -118,7 +119,7 @@
                 }
 
                 .ft-siete {
-                    border: 1px solid $rosa;
+                    border: 1px solid $negro;
                     margin: 20px 0px;
 
                     &:hover {
@@ -134,7 +135,7 @@
                 flex-direction: row;
 
                 .ft-ocho {
-                    border: 1px solid $rosa;
+                    border: 1px solid $negro;
                     margin: 20px 0px;
 
                     &:hover {
@@ -144,7 +145,7 @@
                 }
 
                 .ft-nueve {
-                    border: 1px solid $rosa;
+                    border: 1px solid $negro;
                     margin: 20px 0px;
 
                     &:hover {
@@ -154,7 +155,7 @@
                 }
 
                 .ft-diez {
-                    border: 1px solid $rosa;
+                    border: 1px solid $negro;
                     margin: 20px 0px;
 
                     &:hover {
@@ -167,14 +168,13 @@
             }
 
 
-
             .trabajos-desktop-cuatro {
                 display: flex;
                 justify-content: space-around;
                 flex-direction: row;
 
                 .ft-once {
-                    border: 1px solid $rosa;
+                    border: 1px solid $negro;
                     margin: 20px 0px;
 
                     &:hover {
@@ -184,7 +184,7 @@
                 }
 
                 .ft-doce {
-                    border: 1px solid $rosa;
+                    border: 1px solid $negro;
                     margin: 20px 0px;
 
                     &:hover {
@@ -194,7 +194,7 @@
                 }
 
                 .ft-trece {
-                    border: 1px solid $rosa;
+                    border: 1px solid $negro;
                     margin: 20px 0px;
 
                     &:hover {
@@ -205,46 +205,46 @@
             }
 
 
-                .trabajos-desktop-cinco {
-                    display: flex;
-                    justify-content: space-around;
-                    flex-direction: row;
+            .trabajos-desktop-cinco {
+                display: flex;
+                justify-content: space-around;
+                flex-direction: row;
 
-                    .ft-catorce {
-                        border: 1px solid $rosa;
-                        margin: 20px 0px;
+                .ft-catorce {
+                    border: 1px solid $negro;
+                    margin: 20px 0px;
 
-                        &:hover {
-                            transform: scale(2);
-                            transition: all 2s;
-                        }
+                    &:hover {
+                        transform: scale(2);
+                        transition: all 2s;
                     }
-
-                    .ft-quince {
-                        border: 1px solid $rosa;
-                        margin: 20px 0px;
-
-                        &:hover {
-                            transform: scale(2);
-                            transition: all 2s;
-                        }
-                    }
-
-                    .ft-dieciseis {
-                        border: 1px solid $rosa;
-                        margin: 20px 0px;
-
-                        &:hover {
-                            transform: scale(2);
-                            transition: all 2s;
-                        }
-                    }
-
-
                 }
 
-            
-            
+                .ft-quince {
+                    border: 1px solid $negro;
+                    margin: 20px 0px;
+
+                    &:hover {
+                        transform: scale(2);
+                        transition: all 2s;
+                    }
+                }
+
+                .ft-dieciseis {
+                    border: 1px solid $negro;
+                    margin: 20px 0px;
+
+                    &:hover {
+                        transform: scale(2);
+                        transition: all 2s;
+                    }
+                }
+
+
+            }
+
+
+
         }
 
         .bloque-texto-trabajo {
@@ -257,6 +257,7 @@
                 padding: 10px;
                 display: flex;
                 align-items: center;
+                text-align: center;
                 color: $rosa;
                 line-height: 25px;
                 font-family: 'Raleway', sans-serif;
@@ -278,8 +279,4 @@
         }
     }
 }
-
-/*FIN TRABAJOS DESKTOP*/
-
-
-/* ----------------FIN TRABAJOS--------------- */
+/* FIN TRABAJOS DESKTOP */
